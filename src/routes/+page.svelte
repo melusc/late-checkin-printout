@@ -31,9 +31,11 @@
 		}
 
 		printWindow?.addEventListener('load', () => {
-			printWindow.focus();
-			printWindow.print();
-			printWindow.close();
+			setTimeout(() => {
+				printWindow.focus();
+				printWindow.print();
+				printWindow.close();
+			}, 1000);
 		});
 	}
 
