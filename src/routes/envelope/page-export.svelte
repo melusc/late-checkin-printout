@@ -84,7 +84,6 @@
 	.name {
 		font-size: 35pt;
 		margin-bottom: 1cm;
-		white-space: pre;
 	}
 
 	.room-row {

@@ -8,7 +8,7 @@
 	export let gender: 'm' | 'f' | 'd';
 </script>
 
-<div class="half-page">
+<div>
 	{#if gender === 'd'}
 		<p>Dear {name} {surname}</p>
 	{:else if gender === 'm'}
@@ -55,15 +55,5 @@
 
 	.bold {
 		font-weight: bold;
-	}
-
-	.half-page {
-		padding-left: 0.5cm;
-	}
-
-	@media print {
-		.half-page {
-			border-left: 1px dotted black;
-		}
 	}
 </style>

@@ -3,7 +3,7 @@
 	import './app.css';
 	import {data} from '$lib/url-data';
 
-	const {gender, room, name, surname} = data;
+	const {gender, room, name, surname, showGerman, showEnglish} = data;
 </script>
 
-<PageExport {gender} {room} {name} {surname} />
+<PageExport {gender} {room} {name} {surname} {showGerman} {showEnglish} />

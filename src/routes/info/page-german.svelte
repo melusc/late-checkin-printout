@@ -8,7 +8,7 @@
 	export let gender: 'm' | 'f' | 'd';
 </script>
 
-<div class="half-page">
+<div>
 	{#if gender === 'd'}
 		<p>Guten Tag {name} {surname}</p>
 	{:else if gender === 'm'}
@@ -57,9 +57,5 @@
 
 	.bold {
 		font-weight: bold;
-	}
-
-	.half-page {
-		padding-right: 0.5cm;
 	}
 </style>

@@ -2,6 +2,7 @@
 	import EnvelopePageExport from './envelope/page-export.svelte';
 	import InfoPageExport from './info/page-export.svelte';
 	import Input from './input.svelte';
+	import '../app.css';
 
 	let gender: 'm' | 'f' | 'd' = 'd';
 	let room = 22;
@@ -9,18 +10,19 @@
 	let surname = 'Mouse';
 	let showEnglish = true;
 	let showGerman = true;
+	$: envelopeName = `${name.at(0)}. ${surname}`;
 
-	function printPage(name: string) {
-		const url = new URL(`/${name}`, location.href);
+	function printPage(path: string) {
+		const url = new URL(path, location.href);
 		const sp = url.searchParams;
 		sp.set('gender', gender);
 		sp.set('room', String(room));
 		sp.set('name', name);
 		sp.set('surname', surname);
-		sp.set('showEnglish', String	(showEnglish));
+		sp.set('showEnglish', String(showEnglish));
 		sp.set('showGerman', String(showGerman));
 		const printWindow = open(
-			`/${name}`,
+			url.href,
 			'',
 			'left=0,top=0,toolbar=0,scrollbars=0,status=0',
 		)!;
@@ -54,9 +56,9 @@
 />
 
 <button on:click={printEnvelope}>Umschlag drucken</button>
-<EnvelopePageExport {name} {room} {showEnglish} {showGerman} />
+<EnvelopePageExport name={envelopeName} {room} {showEnglish} {showGerman} />
 <button on:click={printInfo}>Hotelinfo drucken</button>
-<InfoPageExport {name} {room} {gender} {surname} />
+<InfoPageExport {name} {room} {gender} {surname} {showEnglish} {showGerman} />
 
 <style>
 	button {
@@ -65,12 +67,13 @@
 		outline: none;
 		border: 1px solid black;
 		padding: 0.5em 1em;
-		margin: .8em;
+		margin: 0.8em;
 		border-radius: 0.2em;
 		margin-top: 2em;
 	}
 
-	button:active, button:focus {
+	button:active,
+	button:focus {
 		outline: 2px dotted black;
 	}
 </style>
