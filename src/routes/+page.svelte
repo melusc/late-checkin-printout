@@ -48,6 +48,10 @@
 	}
 </script>
 
+<svelte:head>
+	<title>Late Check-In Printout</title>
+</svelte:head>
+
 <Input
 	bind:gender
 	bind:room
@@ -57,9 +61,9 @@
 	bind:showGerman
 />
 
-<button on:click={printEnvelope}>Umschlag drucken</button>
+<button type="button" on:click|preventDefault={printEnvelope}>Umschlag drucken</button>
 <EnvelopePageExport name={envelopeName} {room} {showEnglish} {showGerman} />
-<button on:click={printInfo}>Hotelinfo drucken</button>
+<button type="button" on:click|preventDefault={printInfo}>Hotelinfo drucken</button>
 <InfoPageExport {name} {room} {gender} {surname} {showEnglish} {showGerman} />
 
 <style>

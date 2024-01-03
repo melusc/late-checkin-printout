@@ -9,4 +9,8 @@
 	$: formattedName = `${name.at(0)}. ${surname}`;
 </script>
 
+<svelte:head>
+	<title>Envelope generator</title>
+</svelte:head>
+
 <PageExport {showGerman} {showEnglish} {room} name={formattedName} />

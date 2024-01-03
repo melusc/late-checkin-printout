@@ -10,6 +10,11 @@
 	export let showEnglish: boolean;
 </script>
 
+
+<svelte:head>
+	<title>Hotel-Info generator</title>
+</svelte:head>
+
 <div class="info">
 	{#if showGerman}
 		<PageGerman {name} {room} {gender} {surname} />
