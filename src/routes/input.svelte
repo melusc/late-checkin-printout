@@ -56,6 +56,7 @@
 		display: grid;
 		grid-template-columns: 15ch 1fr;
 		justify-items: flex-start;
+		align-items: center;
 	}
 
 	@media print {
