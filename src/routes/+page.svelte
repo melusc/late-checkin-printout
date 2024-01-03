@@ -4,6 +4,12 @@
 	import Input from './input.svelte';
 	import '../app.css';
 
+	if (typeof alert !== 'undefined' && !/Chrome/.test(navigator.userAgent)) {
+		alert(
+			'Unfortunately, I could only get this to work with Chromium. Please use a Chromium based browser.',
+		);
+	}
+
 	let gender: 'm' | 'f' | 'd' = 'd';
 	let room = 22;
 	let name = 'Mickey';
