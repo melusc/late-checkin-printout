@@ -1,0 +1,8 @@
+@import '../../app.css';
+
+@media print {
+	@page {
+		size: 229mm 162mm;
+		margin: 2cm;
+	}
+}
