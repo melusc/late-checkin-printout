@@ -10,7 +10,6 @@
 	export let showEnglish: boolean;
 </script>
 
-
 <svelte:head>
 	<title>Hotel-Info generator</title>
 </svelte:head>

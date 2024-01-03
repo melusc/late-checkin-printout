@@ -30,13 +30,7 @@
 			return;
 		}
 
-		printWindow?.addEventListener('load', () => {
-			setTimeout(() => {
-				printWindow.focus();
-				printWindow.print();
-				printWindow.close();
-			}, 1000);
-		});
+		printWindow.focus();
 	}
 
 	function printEnvelope() {
@@ -61,9 +55,13 @@
 	bind:showGerman
 />
 
-<button type="button" on:click|preventDefault={printEnvelope}>Umschlag drucken</button>
+<button type="button" on:click|preventDefault={printEnvelope}>
+	Umschlag drucken
+</button>
 <EnvelopePageExport name={envelopeName} {room} {showEnglish} {showGerman} />
-<button type="button" on:click|preventDefault={printInfo}>Hotelinfo drucken</button>
+<button type="button" on:click|preventDefault={printInfo}>
+	Hotelinfo drucken
+</button>
 <InfoPageExport {name} {room} {gender} {surname} {showEnglish} {showGerman} />
 
 <style>
