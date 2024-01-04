@@ -18,7 +18,7 @@
 	{#if showGerman}
 		<PageGerman {name} {room} {gender} {surname} />
 	{/if}
-	{#if showGerman && showEnglish}
+	{#if showGerman || showEnglish}
 		<div class="border"></div>
 	{/if}
 	{#if showEnglish}
@@ -31,6 +31,10 @@
 		display: grid;
 		grid-template-columns: 1fr 1px 1fr;
 		gap: 0.5cm;
+	}
+
+	.border {
+		grid-column: 2;
 	}
 
 	@media screen {
