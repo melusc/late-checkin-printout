@@ -25,8 +25,8 @@
 	</p>
 	<p class="bold"><RoomEnglish {room} /></p>
 	<p>
-		Put the key in the door lock and wait for a short beep. You can now enter
-		the door turning the key counter-clockwise.
+		Put the key in the door lock and wait for a short beep. You can now unlock
+		the door by turning the key.
 	</p>
 	<p class="title">Wi-Fi:</p>
 	<p>Select “Europehotel Guests”. Accept terms and conditions to log in</p>

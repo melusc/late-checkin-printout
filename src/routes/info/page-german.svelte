@@ -26,7 +26,7 @@
 	<p class="bold"><RoomGerman {room} /></p>
 	<p>
 		Stecken Sie den Schlüssel in das Türschloss und warten Sie auf einen kurzen
-		Piepston, dann können Sie die Tür linksdrehend öffnen.
+		Piepston, dann können Sie die Tür durch drehen des Schlüssels öffnen.
 	</p>
 	<p class="title">Wi-Fi:</p>
 	<p>
