@@ -229,7 +229,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@eslint/js@npm:9.4.0":
+"@eslint/js@npm:9.4.0, @eslint/js@npm:^9.4.0":
   version: 9.4.0
   resolution: "@eslint/js@npm:9.4.0"
   checksum: 10c0/7ffc508d3e9cd496cab7f08c5ba8f97851c8adaea3ebff8804b1c3b4662aa7aac7e9c3b597f7e47fdc29319a107bcf892865070a6b113c2e4d19f8fa1f99f569
@@ -1105,6 +1105,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "envelope-printout@workspace:."
   dependencies:
+    "@eslint/eslintrc": "npm:^3.1.0"
+    "@eslint/js": "npm:^9.4.0"
     "@sveltejs/adapter-static": "npm:^3.0.1"
     "@sveltejs/kit": "npm:^2.0.6"
     "@sveltejs/vite-plugin-svelte": "npm:^3.1.1"
@@ -1114,6 +1116,7 @@ __metadata:
     eslint: "npm:^9.4.0"
     eslint-config-prettier: "npm:^9.1.0"
     eslint-plugin-svelte: "npm:^2.39.0"
+    globals: "npm:^15.4.0"
     prettier: "npm:^3.3.0"
     prettier-plugin-svelte: "npm:^3.2.3"
     svelte: "npm:^4.2.17"
@@ -1621,6 +1624,13 @@ __metadata:
   version: 14.0.0
   resolution: "globals@npm:14.0.0"
   checksum: 10c0/b96ff42620c9231ad468d4c58ff42afee7777ee1c963013ff8aabe095a451d0ceeb8dcd8ef4cbd64d2538cef45f787a78ba3a9574f4a634438963e334471302d
+  languageName: node
+  linkType: hard
+
+"globals@npm:^15.4.0":
+  version: 15.4.0
+  resolution: "globals@npm:15.4.0"
+  checksum: 10c0/19041b8fd49deb154e1cb706c82756ab7184c8ae3495aab183efcad9edd1b6320cc54af1a9110d8699245bef124834b004a8156ca988ba7814c25ec71a43f6a4
   languageName: node
   linkType: hard
 
