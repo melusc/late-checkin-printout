@@ -2430,7 +2430,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier-plugin-svelte@npm:^3.2.4":
+"prettier-plugin-svelte@npm:^3.2.3":
   version: 3.2.4
   resolution: "prettier-plugin-svelte@npm:3.2.4"
   peerDependencies:
@@ -2440,7 +2440,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier@npm:^3.3.1":
+"prettier@npm:^3.3.0":
   version: 3.3.1
   resolution: "prettier@npm:3.3.1"
   bin:
@@ -2886,7 +2886,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"svelte@npm:^4.2.18":
+"svelte@npm:^4.2.17":
   version: 4.2.18
   resolution: "svelte@npm:4.2.18"
   dependencies:
