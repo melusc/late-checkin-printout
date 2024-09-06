@@ -13,25 +13,25 @@
 	},
 	"devDependencies": {
 		"@eslint/eslintrc": "^3.1.0",
-		"@eslint/js": "^9.9.1",
+		"@eslint/js": "^9.10.0",
 		"@sveltejs/adapter-static": "^3.0.4",
-		"@sveltejs/kit": "^2.5.24",
+		"@sveltejs/kit": "^2.5.26",
 		"@sveltejs/vite-plugin-svelte": "^3.1.2",
-		"@types/eslint": "9.6.0",
-		"@typescript-eslint/eslint-plugin": "^8.2.0",
-		"@typescript-eslint/parser": "^8.2.0",
-		"eslint": "^9.9.1",
+		"@types/eslint": "9.6.1",
+		"@typescript-eslint/eslint-plugin": "^8.4.0",
+		"@typescript-eslint/parser": "^8.4.0",
+		"eslint": "^9.10.0",
 		"eslint-config-prettier": "^9.1.0",
 		"eslint-plugin-svelte": "^2.43.0",
 		"globals": "^15.9.0",
 		"prettier": "^3.3.3",
 		"prettier-plugin-svelte": "^3.2.6",
 		"svelte": "^4.2.19",
-		"svelte-check": "^4.0.0",
+		"svelte-check": "^4.0.1",
 		"tslib": "^2.7.0",
 		"typescript": "^5.5.4",
-		"vite": "^5.4.2"
+		"vite": "^5.4.3"
 	},
 	"type": "module",
-	"packageManager": "yarn@4.4.0"
+	"packageManager": "yarn@4.4.1"
 }
